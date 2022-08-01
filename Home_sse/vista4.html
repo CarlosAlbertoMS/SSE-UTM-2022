@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style4.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header--div11-img">
+        <img src="./assets/img/u26.png" width="132" height="39" alt="" />
+      </div>
+      <div class="main--title">
+        <p>Sistema de Seguimiento de Egresados y Bolsa de Trabajo</p>
+      </div>
+      <div class="header--div12-img">
+        <img src="./assets/img/u43.png" width="60" height="68" alt="" />
+      </div>
+    </header>
+    <main>
+      <section class="main--section">
+        <div class="main-img">
+          <div class="main--back">
+            <div class="flecha1">
+              <!--Aquì va la imagen de flecha-->
+            </div>
+            <div class="flecha2">
+              <!--Aquì va la imagen de flecha-->
+            </div>
+            <div class="flecha3">
+              <!--Aquì va la imagen de flecha-->
+            </div>
+            <div class="flecha4">
+              <!--Aquì va la imagen de flecha-->
+            </div>
+          </div>
+          <img src="./assets/img/u46.jpg" width="1024" height="607" alt="" />
+        </div>
+        <div class="main-form">
+            <form action="#">
+              <div class="main-form--pricipal">
+                <!---Nombre de la empresa-->
+                <div class="main-form--Label1"><p>Nombre de la Empresa*</p></div>
+                <input type="texts" id="fname" name="fname" value="Empresa"><br><br>
+
+                <!--Sector-->
+                <div class="main-form--Label4"><p>Sector</p>
+                  <div class="buttons">
+                    <input type="radio" name="fname" value="Publica"/><label>Pública</label>
+                    <input type="radio" name="fname" value="Privada"/><label>Privada</label>
+                    <input type="radio" name="fname" value="Propia"/><label>Propia</label>
+                  </div><br>
+                </div><br><br>
+                  
+                <!--Tiempo sin empleo-->
+                <div class="main-form--Label1"><p>Tiempo sin empleo</p></div>
+                <select name="TiempoSinEmpleo">
+                    <option selected value="0">- Selecciona el tiempo sin empleo -</option>
+                    <option value="1">< a 6 meses</option>
+                    <option value="2">De 6 a 9 meses</option>
+                    <option value="3">De 10 a 12 meses</option>
+                    <option value="4">> a 1 año</option>
+                    <option value="5">No cuento con empleo aún</option>
+                </select><br><br>
+
+                  <!---Fecha de ingreso-->
+                <div class="main-form--Label1"><p>Fecha de ingreso</p></div>
+                <input type="date" id="fname" name="fname" value="Septiembre 12 - 2020"><br><br>
+
+                 <!---Puesto Inicial-->
+                <div class="main-form--Label1"><p>Puesto Inicial</p></div>
+                <input type="text" id="fname" name="fname" value="Agregar puesto"><br><br>
+
+                <!---Puesto Final-->
+                <div class="main-form--Label1"><p>Puesto Final</p></div>
+                <input type="text" id="fname" name="fname" value="Agregar puesto"><br><br>
+
+                <!---Jornada de trabajo-->
+                <div class="main-form--Label1"><p>Jornada de Trabajo</p></div>
+                <select name="TiempoSinEmpleo">
+                    <option selected value="0">- Selecciona la jornada de trabajo -</option>
+                    <!--<option value="1">< a 6 meses</option>
+                    <option value="2">De 6 a 9 meses</option>
+                    <option value="3">De 10 a 12 meses</option>
+                    <option value="4">> a 1 año</option>
+                    <option value="5">No cuento con empleo aún</option>-->
+                </select><br><br>
+
+                <div class="main-form--Label1"><p>Tipo de contrato</p></div>
+                <select name="TiempoSinEmpleo">
+                    <option selected value="0">- Selecciona el tipo de contrato -</option>
+                    <!--<option value="1">< a 6 meses</option>
+                    <option value="2">De 6 a 9 meses</option>
+                    <option value="3">De 10 a 12 meses</option>
+                    <option value="4">> a 1 año</option>
+                    <option value="5">No cuento con empleo aún</option>-->
+                </select><br><br>
+                <!---Teléfono de la empresa-->
+                <div class="main-form--Label1"><p>Teléfono de la empresa</p></div>
+                <input type="tel" id="fname" name="fname" value="Agregar teléfono"><br><br>
+               
+                <select name="TiempoSinEmpleo"><p>Ingreso mensual</p>
+                    <option selected value="0">- Selecciona el ingreso mensual -</option>
+                   <!-- <option value="1">< a 6 meses</option>
+                    <option value="2">De 6 a 9 meses</option>
+                    <option value="3">De 10 a 12 meses</option>
+                    <option value="4">> a 1 año</option>
+                    <option value="5">No cuento con empleo aún</option>>-->
+                </select><br><br>
+
+                <select name="TiempoSinEmpleo"><p>Sus actividades laborales</p>
+                    <option selected value="0">- Selecciona las actividades laborales -</option>
+                   <!--<option value="1">< a 6 meses</option>
+                    <option value="2">De 6 a 9 meses</option>
+                    <option value="3">De 10 a 12 meses</option>
+                    <option value="4">> a 1 año</option>
+                    <option value="5">No cuento con empleo aún</option>-->
+                </select><br><br>
+
+                <!---Factores de contratación-->
+                <div class="main-form--Label1"><p>Factores de contratación</p></div>
+                <input type="text" id="fname" name="fname" value="Agregar factores"><br><br>
+
+                <!---Carencias básicas-->
+               <select name="TiempoSinEmpleo"><p>Carencias básicas</p>
+                    <option selected value="0">- Selecciona las carencias básicas -</option>
+                   <!--<option value="1">< a 6 meses</option>
+                    <option value="2">De 6 a 9 meses</option>
+                    <option value="3">De 10 a 12 meses</option>
+                    <option value="4">> a 1 año</option>
+                    <option value="5">No cuento con empleo aún</option>-->
+                </select><br><br>
+
+                <!---Áreas de carencia-->
+                <div class="main-form--Label1"><p>Áreas de carencia</p></div>
+                <input type="text" id="fname" name="fname" value="Agregar carencias"><br><br>
+
+                <!---Motivos de no estudiar posgrado-->
+                <div class="main-form--Label1"><p>Motivos de no estudiar posgrado</p></div>
+                <input type="text" id="fname" name="fname" value="Agregar motivos"><br><br>
+
+                <!---Recomendaciones-->
+                <div class="main-form--Label1"><p>Recomendaciones</p></div>
+                <input type="text" id="fname" name="fname" value="Agrega recomendaciones"><br><br>
+              </div>
+              
+              	<div class="main-form--secundario">
+              		<!---Mensaje de campos obligatorios-->
+	                <div class="main-form--Label2">
+	                  <p>*Campos obligatorios</p>
+	                </div><br><br>
+	                <!---Botones-->
+	                <div class="Container--button">
+	                    <!---Boton de regresar-->
+	                    <button type="submit">Regresar</button>
+	                    <!-- Boton de siguiente-->
+	                    <button type="submit">Siguiente</button>
+	                </div>
+	                <!---Mensaje en caso de olvidar matricula-->
+	                <br><div class="main-form--Label3"><p>Si no recuerdas tu matrícula comunícate a las Coordinación de Vinculación de Alumnos y Egresados de tu universidad</p></div>
+                </div>
+                <!--</div>-->                
+            </form>            
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer--div1-img">
+        <img src="./assets/img/u26.png" width="132" height="39" alt="" />
+      </div>
+      <div class="footer--titleT1">
+        <div class="footer--title1">
+          <p>Sobre SUNEO</p>
+        </div>
+        <div class="footer--title1">
+          <p>Aviso de Privacidad</p>
+        </div>
+        <div class="footer--title1">
+          <p>Empresas</p>
+        </div>
+        <div class="footer--title1">
+          <p>Ayuda</p>
+        </div>
+      </div>
+      <div class="footer--titleT2">
+        <div class="footer--title2">
+          <p>Coordinación de Vinculación de Alumnos y Egresados UTM</p>
+        </div>
+        <div class="footer--title2">
+          <p>Teléfonos: (953) 53 203 99 o (953) 53 202 14 ext. 113 o 116</p>
+        </div>
+      </div>
+      <div class="footer--titleT3">
+        <div class="footer--title2">
+          <p>De Lunes a Viernes de 8:00 a 13:00 y de 16:00 a 19:00 hrs</p>
+        </div>
+        <div class="footer--title2">
+          <p>
+            Carretera a Acatlima Km. 2.5 Huajuapan de León, Oaxaca, México C.P
+            69000
+          </p>
+        </div>
+      </div>
+      <div class="footer--titleT4">
+        <div class="footer--title2">
+          <p>SUNEO, Oaxaca, México. 2020</p>
+        </div>
+      </div>
+      <div class="footer--div2-img">
+        <img src="./assets/img/u14.png" width="48" height="68" alt="" />
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

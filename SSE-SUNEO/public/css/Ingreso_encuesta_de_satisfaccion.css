@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /*LOGIN*/
+  --color-bloque-header: #071e33;
+  --color-image: #ffffff;
+  --color-block-form: rgba(255, 255, 255, 0.92);
+  --color-elements-form: #acabab;
+  --color-scroll-bar: #acabab;
+  --color-bloque-footer: #f2f3f4;
+  --color-hover-elements-form: #071e33;
+  --text-header-title: #ffffff;
+  --text-element-form: #7f8c9d;
+  --text-questions: #333333;
+  --text-input-form: #071e33;
+  --text-title-footer: #071e33;
+  --text-footer: #7f7f7f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  display: flex;
+  width: 1024px;
+  height: 85px;
+  background-color: var(--color-bloque-header);
+  margin: 0 auto;
+}
+
+.header--div--img-1 {
+  width: 137px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header--div--img-1 img{
+  width: 132px;
+  height: 39px;
+  margin: 23px auto 23px 11px;
+}
+
+.header--div--img-2 {
+  width: 132px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header--div--img-2 img{
+  width: 75px;
+  height: 73px;
+  margin: 6px auto 6px 7px;
+  background: url("../assets/img/u43_fondo.svg") no-repeat 5px;
+}
+
+.header--Title {
+  width: 755px;
+}
+
+.header--Title p {
+  font-size: 2.5rem;
+  font-family: 'Poppins-Regular', 'Poppins', sans-serif;
+  color: var(--text-header-title);
+  text-align: center;
+  line-height: normal;
+  margin: 27px auto;
+}
+
+.main--container {
+  width: 920px;
+  height: 472px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-block-form);
+  margin: 8px auto auto 51px;
+}
+
+.main--header {
+  height: 62px;
+  display: flex;
+}
+
+.main--header img  {
+  width: 260px;
+}
+
+.main--header--flecha-1, .main--header--flecha-2 {
+  height: 62px;
+  width: 225px;
+  display: flex;
+  position: relative;
+}
+
+.main--header--flecha-2 {
+  right: 15px;
+}
+
+.main--header--flecha-1 div, .main--header--flecha-2 div {
+  font-size: 1.6rem;
+  font-family: 'Poppins-Regular', 'Poppins', sans-serif;
+  color: var(--color-image);
+  text-align: left;
+  line-height: normal;
+  margin-top: 19px;
+  display: flex;
+  position: absolute;
+}
+
+.main--header--flecha--text-1 {
+  left: 15px;
+}
+
+.main--header--flecha--text-2 {
+  width: 240px;
+  left: 35px;
+}
+
+.main--header--flecha--text-3 {
+  left: 52px;
+}
+
+.main--header--flecha--text-4 {
+  width: 270px;
+  left: 46px;
+}
+
+.main--section {
+  width: 1024px;
+  height: 507px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  background-image: url("../assets/img/u46.jpg");
+  background-repeat: no-repeat;
+  background-size: 1024px 507px;
+}
+
+.main--container--form {
+  height: 412px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main--container-quiz {
+  height: 340px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scroll-bar);
+  display: flex;
+  flex-direction: column;
+}
+
+.main--container-quiz::-webkit-scrollbar,
+.container--question-12-input textarea::-webkit-scrollbar {
+  width: 7px;
+}
+
+.main--container-quiz::-webkit-scrollbar-thumb,
+.container--question-12-input textarea::-webkit-scrollbar-thumb {
+  background: var(--color-scroll-bar);
+}
+
+.text-question p {
+  height: 50px;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-questions);
+  text-align: left;
+  line-height: normal;
+}
+
+.container-question-1 {
+  width: 840px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 24px 7px auto 45px;
+}
+
+.container-question-1-radioB {
+  width: 782px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin: 9px auto auto 19px;
+}
+
+.radio-option label,
+.container-label p {
+  font-size: 1.3rem;
+  font-family: 'Poppins-Light', 'Poppins Light', 'Poppins', sans-serif;
+  font-weight: 200;
+  color: var(--text-questions);
+  text-align: left;
+  line-height: normal;
+}
+
+.container--question-2,
+.container--question-3,
+.container--question-6 {
+  width: 835px;
+  height: 189px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 7px;
+  margin-left: 45px;
+}
+
+.container--question-2 {
+  margin-top: 21px;
+}
+
+.container--question-3,
+.container--question-7 {
+  margin-top: 31px;
+}
+
+.container--question-6 {
+  margin-top: 35px;
+}
+
+.container--options-question {
+  width: 811px;
+  height: 127px;
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 0 0 20px;
+}
+
+.container-question-radioB {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.radio-option input[type="radio"],
+.radio-option input[type="checkbox"],
+td input[type="radio"] {
+  display: none;
+}
+
+.radio-option input[type="radio"] + label:before,
+.radio-option input[type="checkbox"] + label:before {
+  content: '';
+  background-image: url("../assets/icons/radio_button.svg");
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: 4px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.radio-option input[type="radio"] + label:before,
+.radio-option input[type="checkbox"] + label:before,
+.radio-option input[type="radio"]:checked + label::before,
+.radio-option input[type="checkbox"]:checked + label:before,
+.radio-option input[type="radio"]:disabled + label::before,
+.radio-option input[type="checkbox"]:disabled + label:before,
+.radio-option input[type="radio"]:disabled:checked + label::before,
+.radio-option input[type="checkbox"]:disabled:checked + label::before {
+  width: 13px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  border: none;
+}
+
+.radio-option input[type="radio"]:checked + label::before,
+.radio-option input[type="checkbox"]:checked + label:before {
+  background-image: url("../assets/icons/radio_button_selected.svg");
+}
+
+.radio-option input[type="radio"]:disabled + label::before,
+.radio-option input[type="checkbox"]:disabled + label:before {
+  background-image: url("../assets/icons/radio_button_disabled.svg");
+}
+
+.radio-option input[type="radio"]:disabled:checked + label::before,
+.radio-option input[type="checkbox"]:disabled:checked + label::before {
+  background-image: url("../assets/icons/radio_button_disabled_selected.svg");
+}
+
+.more-options, 
+.more-options-2 {
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-options p,
+.more-options-2 p {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-element-form);
+  text-align: left;
+  line-height: normal;
+}
+
+.more-options-2 p, 
+.container-radioB_input .radio-option,
+.container-radioB_input-2 .radio-option,
+.container-option-false .radio-option,
+.container-label p {
+  margin-top: 7px;
+}
+
+.container-question-input_s {
+  width: 638px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-more-options {
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.container-input {
+  width: 281px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-input input,
+.container-option-false-input input {
+  width: 251px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid var(--text-input-form);
+  background-color: var(--color-image);
+  font-size: 1.3rem;
+  font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
+  font-weight: 200;
+  color: var(--text-element-form);
+  text-align: left;
+  padding-left: 4px;
+}
+
+.container--question-4,
+.container--question-7,
+.container--question-9 {
+  width: 845px;
+  height: 338px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 7px;
+  margin-left: 45px;
+}
+
+.container--question-4 {
+  margin-top: 16px;
+}
+
+.container--question-9 {
+  margin-top: 45px;
+}
+
+.container-options-radioB {
+  width: 817px;
+  height: 256px;
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-options-radioB-2 {
+  width: 817px;
+  height: 134px;
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-radioB_s {
+  height: 18px;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.container-radioB_s-2 {
+  height: 18px;
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.container-radioB_input,
+.container-radioB_input-2{
+  width: 330px;
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-radioB_input {
+  margin-top: 12px;
+}
+
+.container-radioB_input-2 {
+  margin-top: 10px;
+}
+
+.input-option input {
+  width: 259px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid var(--text-input-form);
+  background-color: var(--color-image);
+  font-size: 1.3rem;
+  font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
+  font-weight: 200;
+  color: var(--text-element-form);
+  text-align: left;
+  padding-left: 4px;
+}
+
+.column-radioB-1 {
+  width: 330px;
+}
+
+.column-radioB-2 {
+  width: 298px;
+}
+
+.column-radioB-3 {
+  width: 189px;
+}
+
+.container--question-5,
+.container--question-8 {
+  width: 835px;
+  height: 229px;
+  display: flex;
+  flex-direction: column;
+  margin: 54px 7px 0 45px;
+}
+
+.container-question-input_s-2 {
+  width: 638px;
+  height: 142px;
+  margin-top: 15px;
+}
+
+.container--question-10 {
+  width: 828px;
+  height: 409px;
+  display: flex;
+  flex-direction: column;
+  margin: 71px 7px auto 45px;
+}
+
+.container-table {
+  width: 800px;
+  height: 343px;
+  margin: 14px auto auto 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container--description {
+  width: 412px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0 6px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container--score {
+  width: 371px;
+  height: 18px;
+  display: flex;
+  margin: auto 0 3px auto;
+  font-family: 'Arial Regular', 'Arial', sans-serif;
+}
+
+.container--description,
+.container--score div p {
+  font-size: 1.3rem;
+  color: var(--text-questions);
+  text-align: left;
+  line-height: normal;
+}
+
+.text--score-1 {
+  margin-right: 120px;
+}
+
+.text--score-2 {
+  margin-right: 102px;
+}
+
+.text--score-3 {
+  margin-right: 94px;
+}
+
+table {
+  width: 800px;
+  height: 288px;
+  border-collapse: collapse;
+}
+
+table .table-other-color-1 {
+  background-color: var(--color-bloque-header);
+}
+
+table .table-other-color-2 {
+  background-color: var(--color-elements-form);
+}
+
+td input[type="radio"] + label:before {
+  width: 16px;
+  height: 16px;
+  content: '';
+  background-color: var(--color-image);
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td input[type="radio"]:checked + label:before {
+  background-image: url("../assets/icons/radio_button_B_selected.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+.table-column-1 {
+  width: 126px;
+}
+
+.table-column-2 {
+  width: 110px;
+}
+
+.table-column-3 {
+  width: 101px;
+}
+
+.table-column-4 {
+  width: 38px;
+}
+
+.text-table {
+  width: 415px;
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-header-title);
+  text-align: left;
+  line-height: normal;
+  padding-left: 10px;
+}
+
+.container--question-11 {
+  width: 845px;
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 7px auto 45px;
+}
+
+.container--question-11-radioB{
+  width: 373px;
+  height: 77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 22px;
+}
+
+.container-option-true {
+  width: 110px;
+  height: 18px;
+}
+
+.container-option-false {
+  width: 373px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container--question-12 {
+  width: 838px;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  margin: 33px 7px auto 45px;
+}
+
+.container--question-12-input textarea {
+  width: 810px;
+  height: 79px;
+  border-radius: 5px;
+  border: 1px solid var(--color-hover-elements-form);
+  background-color: var(--color-image);
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
+  color: var(--text-element-form);
+  text-align: start;
+  padding-left: 4px;
+  padding-top: 4px;
+  margin-left: 28px;
+  resize: none;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scroll-bar);
+}
+
+.main--container-button {
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main--container-button p {
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-title-footer);
+  text-align: left;
+  line-height: normal;
+  margin: 13px 0 auto 397px;
+}
+
+.container-button {
+  width: 400px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 259px 8px 261px;
+}
+
+.container-button a {
+  width: 160px;
+  height: 32px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  color: var(--text-header-title);
+  text-align: center;
+  line-height: normal;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  background-color: var(--color-elements-form);
+  border: var(--color-elements-form);
+  padding-top: 8px;
+}
+
+form button {
+  width: 160px;
+  border-radius: 4px;
+  background-color: var(--color-elements-form);
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
+  color: var(--text-header-title);
+  text-align: center;
+  line-height: normal;
+}
+
+form button:hover, .container-button a:hover {
+  background-color: var(--color-hover-elements-form);
+}
+
+footer {
+  position: relative;
+  width: 1024px;
+  height: 82px;
+  display: flex;
+  background-color: var(--color-bloque-footer);
+  margin: 8px auto auto auto;
+}
+
+.footer--container--1 {
+  width: 157px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer--container--1 img{
+  width: 132px;
+  height: 39px;
+  margin: 20px auto auto 11px;
+}
+
+.footer--container--2 {
+  width: 752px;
+}
+
+.footer--Title {
+  font-size: 1.3rem;
+  font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
+  font-weight: 200;
+  color: var(--text-title-footer);
+  text-align: left;
+  line-height: normal;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer--title--1{
+  margin: 9px 14px 4px 0;
+}
+
+.footer--Text {
+  font-size: 1rem;
+  height: 14px;
+  font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
+  font-weight: 200;
+  color: var(--text-footer);
+  text-align: left;
+  line-height: normal;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.footer--title--2-1{
+  width: 282px;
+  margin-right: 45px;
+}
+
+.footer--title--2-2{
+  width: 370px;
+}
+
+.footer--container--3 {
+  width: 115px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer--container--3 img {
+  width: 48px;
+  height: 68px;
+  margin: 7px 0;
+}
