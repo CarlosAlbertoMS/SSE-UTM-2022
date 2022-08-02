@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-header: #f2f2f2;
+    --color-menu-header: #071e33;
+    --color-main: #ffffff;
+    --color-footer: rgba(255, 255, 255, 0.92);
+    --text-title-header: #071e33;
+    --text-menu-header: #f2f2f2;
+    --text-footer: #7f7f7f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("assets/img/fondo_ofertas.jpg");
+    background-repeat: no-repeat; 
+    background-size: 1344px 714px;
+}
+
+header {
+    width: 1024px;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--color-header);
+    margin: 0 auto;
+}
+
+.header--container-1 {
+    height: 82px;
+    display: flex;
+}
+
+.header--div0 {
+    width: 340px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header--div0 img {
+    width: 105px;
+    height: 33px;
+    margin: 23px auto 26px 21px;
+}
+
+.header--div1 {
+    width: 341px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header--div1 img {
+    width: 60px;
+    height: 57px;
+    margin: 10px 23px 15px auto;
+    background: url("assets/img/u43_fondo.svg") no-repeat 2px;
+    background-size: 54px 56px;
+}
+
+.header--title {
+    width: 343px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header--title p {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-title-header);
+    text-align: center;
+    line-height: normal;   
+    margin-top: 20px;
+}
+
+.header--container-2 {
+    height: 32px;
+    display: flex;
+    background-color: var(--color-menu-header);
+}
+
+.header-menu-text {
+    width: 900px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-menu-text p {
+    font-size: 1.3rem;
+    font-family: 'Arial Regular', 'Arial', sans-serif;
+    color: var(--text-menu-header);
+    text-align: center;
+    line-height: normal;
+    margin: 7px auto 6px 445px;
+}
+
+.header-menu-icons {
+    width: 124px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header--container-icons {
+    width: 64px;
+    height: 20px;
+    display: flex;
+    margin-right: 22px;
+}
+
+.header--container-icons img{
+    width: 16px;
+    height: 16px;
+    margin: 8px 8px 8px 0;
+}
+
+main {
+    width: 1024px;
+    height: 542px;
+    background-color: var(--color-main);
+    opacity: 0.8;
+    display: flex;
+    margin: 0 auto;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    width: 1024px;
+    height: 58px;
+    background-color: var(--color-footer);
+    margin: 0 auto;
+}
+
+.footer--container--1 {
+    width: 160px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer--container--1 img {
+    width: 100px;
+    height: 29px;
+    margin: 18px auto auto 42px;
+}
+
+.footer--container--2 {
+    width: 864px;
+}
+
+.footer--Title {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-title-header);
+    text-align: left;
+    line-height: normal;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer--title--1{
+    margin: 5px 21px 2px 0;
+}
+
+.footer--Text {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-footer);
+    text-align: left;
+    line-height: normal;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer--title--2-1{
+    width: 282px;
+    margin: 3px 45px 0 0;
+}
+
+.footer--title--2-2{
+    width: 370px;
+    height: 14px;
+    margin-top: 3px;
+}
