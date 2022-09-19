@@ -26,16 +26,15 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+
+  background-image: url("../assets/img/normal_u460.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("../assets/img/normal_u25.jpg");
-  background-repeat: no-repeat;
-  background-size: 1391px 737px;
-  width: 1391px; 
-  height: 723px;
 }
 
 header {
@@ -114,8 +113,9 @@ main{
   display: flex;
   flex-direction: column;
   width: 1024px;
-  height: 531px;
   background-color: rgba(255, 255, 255,0.80);
+  width: 1024px;
+  height: 531px;
 }
 
 .main--title {
