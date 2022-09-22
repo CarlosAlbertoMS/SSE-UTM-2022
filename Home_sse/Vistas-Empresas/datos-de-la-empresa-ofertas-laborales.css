@@ -363,18 +363,22 @@ footer img{
 }
 
 /* MODAL*/
+.modal--container:target {
+  opacity: 1.5;
+  bottom: 1px;
+  pointer-events: visible;
+}
 
 .modal--container{
+  position: absolute;
   display: flex;
-  position:absolute;
+  z-index: 99999;
+  align-self: center;
   justify-content: center;
-  top:0;
-  bottom: 0;
-  opacity: 0;
-  width: 1024px;
-  height: 674px;
-  transition: opacity 400ms ease-in;
-  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  bottom: 1400px;
+  transform: all 1s;
 }
 
 .content-modal{
@@ -384,7 +388,7 @@ footer img{
   z-index: 99999;
   align-self: center;
   justify-content: center;
-  top: 145px;
+  top: 100px;
   width: 750px;
   height: 487px;
   background-color:#071e33;
@@ -424,11 +428,6 @@ footer img{
   color: rgba(255, 255, 255, 0.99);
   text-align: left;
   line-height: normal;
-}
-
-.modal--container:target{
-  opacity: 1.5;
-  pointer-events: visible;
 }
 
 .container-text1{
