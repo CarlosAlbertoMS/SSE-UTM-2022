@@ -62,6 +62,7 @@ header {
   position: relative;
 }
 
+
 .main--title p {
   text-align: center;
   font-family: 'Poppins-Regular', 'Poppins', sans-serif;
@@ -190,38 +191,23 @@ figure {
   margin-bottom: 8px;
 }
 
-.main--header img {
-  width: 280px;
-  /* outline: 1px solid  blue; */
+.main--header img{
+  width: 260px;
 }
 
 .main--header--flecha-1, .main--header--flecha-2 {
   height: 62px;
-  width: 230px;
+  width: 225px;
   display: flex;
   position: relative;
   display: flex;
   justify-content: flex-start;
 }
-.flecha-2 {
-  height: 62px;
-  width: 270px;
-  right: 40px;
+
+.main--header--flecha-2 {
+  right: 15px;
 }
 
-.flecha-3 {
-  height: 62px;
-  width: 240px;
-  right: 75px;
-}
-
-.flecha-4 {
-  height: 62px;
-  width: 275px;
-  right: 95px;
-}
-
-/* Flechas */
 .main--header--flecha-1 div, .main--header--flecha-2 div {
     font-size: 1.6rem;
     font-family: 'Poppins-Regular', 'Poppins', sans-serif;
@@ -231,7 +217,6 @@ figure {
   
     position: absolute;
 }
-
 
 .main--header--flecha--text-1{
   height: 100%;
@@ -251,7 +236,7 @@ figure {
 
 .main--header--flecha--text-3{
   height: 100%;
-  min-width:220px;
+  min-width:220px; 
   display: flex;
   align-items: center;
   margin-left: 50px;
@@ -305,9 +290,9 @@ figure {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   border-radius: 4px;
+
 }
 
-/*MODALES*/
 .modal--container{  
   position: absolute;
   display: flex;

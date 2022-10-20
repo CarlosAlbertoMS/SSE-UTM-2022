@@ -103,22 +103,6 @@ header {
   height:507px;
 }
 
-.main-container img {
-  width: 139px;
-  height: 136px;
-  margin-top: 15px;
-  margin-bottom: 253px;
-}
-
-.main-form {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  top: 60PX;
-  width: 920px;
-  height: 390px;
-}
-
 .text-container {
   position: absolute;
   align-self: center;
@@ -159,7 +143,7 @@ header {
   position: absolute;
   display: flex;
   width: 920px;
-  height: 450px;
+  min-height: 472px;
   background-color: rgba(255,255,255,0.90);
   margin-top: 25px;
   margin-left: 50px;
@@ -203,6 +187,11 @@ figure {
   display: flex;
   justify-content: flex-start;
 }
+
+.flecha-1 {
+    z-index: 10;
+}
+
 .flecha-2 {
   height: 62px;
   width: 270px;
@@ -246,7 +235,7 @@ figure {
   min-width:220px; 
   display: flex;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .main--header--flecha--text-3{
@@ -262,43 +251,76 @@ figure {
   min-width:220px; 
   display: flex;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
-
-.img-container {
-  position: absolute;
-  align-self: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  top: 180px;
-  width: 850px;
-  height: 100px;
+/* CONTENIDO */
+.main-form {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 60PX;
+    width: 920px;
+    min-height: 390px;
 }
 
-.logo--school{
-  width: 70px;
-  height: 70px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.form-crear-perfil-empresa {
+    position: absolute;
+    top: 40px;
+    width: 600px;
+    min-height: 300px;
 }
 
-.logo--school:hover{
-  width: 90px;
-  height: 90px;
+.form-crear-perfil-empresa li {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li label, .campos-obligatorios {
+    font-size: 13px;
+    font-family: 'Poppins';
+    color: var(--color-bloque-header);
+    margin: 4px 0;
+}
+
+li input {
+    width: 598px;
+    height: 32px;
+    border: solid 1px var(--color-bloque-header);
+    border-radius: 4px;
+    padding: 0 0 0 4px;
+    font-family: 'Poppins';
+    color: var(--texto-opc1);
+}
+
+.campos-obligatorios {
+    margin: 8px 0;
+}
+
+.informacion {
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Botones */
+.contenedor-botones {
+    list-style: none;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
 
 .button--1 {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 300px;
   width: 160px;
   height: 32px;
+  margin-right: 50px;
   background-color: var(--color-button1);
   color: var(--texto-opc3);
   font-size: 13px;
@@ -307,7 +329,26 @@ figure {
   border-radius: 4px;
 }
 
-/*MODALES*/
+.button--2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 32px;    
+    margin-right: 50px;
+    background-color: var(--color-bloque-header);
+    color: var(--texto-opc3);
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+
+
+
+
+/* MODAL */
 .modal--container{  
   position: absolute;
   display: flex;
@@ -419,6 +460,9 @@ figure {
   font-weight: 400;
   border-radius: 4px;
 }
+
+
+/* FOOTER */
 
 footer {
   position: relative;
