@@ -19,74 +19,62 @@
     --txt--gris-footer:#7f7f7f;
   }
   
-  * {
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     border: none;
     outline: none;
-  }
+}
   
-  html {
+html {
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
-  }
+}
   
-  body {
+body {
     display: flex;
+    position: relative;
     flex-direction: column;
-  }
+}
   
   header {
-    width: 1024px;
-    height: 85px;
     position: relative;
     display: flex;
+    align-self: start;
     justify-content: center;
     align-items: center;
+    width: 1024px;
+    height: 120px; /*85px*/    
     background-color: var(--bg--azul);
     margin: 0 auto;
-    
 }
 
-.header--div1-img {
-    width: 132px;
-    height: 39px;
-    position: absolute;
-    left: 11px;
-    top: 23px;
-    display: flex;
-}
-
-.header--div3-img {
+.header--img1{
     border-width: 0px;
-    position: absolute;
-    left: 899px;
-    top: 6px;
-    width: 75px;
-    height: 73px;
-    display: flex;
+    width:132px; 
+    height:39px;
+    margin-left: 10px;
 }
-
-.header--div2-img {
+  
+  .header--img2{
     border-width: 0px;
-    position: absolute;
-    left: 901px;
-    top: 6px;
-    width: 75px;
-    height: 73px;
-    display: flex;
+    width:75px; 
+    height:73px;
+    margin-top: 3px;
+    margin-right: 10px;
+    position: relative;
 }
 
-.header--title p {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.5rem; /*1rem = 10 px*/
-    color: var(--txt--blanco);
+.main--title p {
+  text-align: center;
+  font-family: 'Poppins-Regular', 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem; /*1rem = 10 px*/
+  color: var(--txt--blanco);
 }
   
 .main--section {
@@ -95,21 +83,34 @@
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    background-image: url("../assets/img/u46.jpg");
-    background-repeat: no-repeat;
-    background-size: 1024px 507px;
 }
-.main--container {
+
+.main-img {
+    position: relative;
+    align-self: flex-start;
+    width: 1024px;
+    height: 507px;
+    margin: none;
+}
+  
+.img--background{
+    width:1024px;
+    height:507px;
+}
+
+.main--back {
+    position: absolute;
     width: 920px;
     display: flex;
     flex-direction: column;
     background-color: var(--bg--trans--blanco);
-    margin: 8px auto 11px auto;
+    margin-top: 5px;
+    margin-left: 50px;
 }
   
-
-
+/* Contenedor flechas */
 .main--header {
+    margin: 0 auto;
     height: 62px;
     display: flex;
     margin-bottom: 8px;

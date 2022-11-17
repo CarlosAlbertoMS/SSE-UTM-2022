@@ -33,6 +33,7 @@ body {
   flex-direction: column;
 }
 
+/* HEADER */
 header {
   position: relative;
   display: flex;
@@ -40,7 +41,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 1024px;
-  height: 85px;
+  height: 120px;
   text-align: center;
   background-color: var(--color-bloque-header);
   margin: 0 auto;
@@ -71,6 +72,13 @@ header {
   color: var(--texto-opc3);
 }
 
+/*
+Orden contenedores 
+-> section
+-> img
+-> back
+
+*/
 .main--section {
   display: flex;
   flex-direction: row;
@@ -79,7 +87,7 @@ header {
   align-items: center;
 }
 
-.main-body {
+/* .main-body {
   position: relative;
   display: flex;
   justify-content: center;
@@ -88,7 +96,7 @@ header {
   text-align: center;
   background-color: var(--color-bloque-login);
   margin: none;
-}
+} */
 
 .main-img {
   position: relative;
@@ -165,6 +173,8 @@ header {
   margin-left: 50px;
 }
 
+/* Flechas */
+
 .main--arrow{
   position: relative;
   width: 919px;
@@ -192,7 +202,6 @@ figure {
 
 .main--header img {
   width: 280px;
-  /* outline: 1px solid  blue; */
 }
 
 .main--header--flecha-1, .main--header--flecha-2 {
@@ -221,14 +230,12 @@ figure {
   right: 95px;
 }
 
-/* Flechas */
 .main--header--flecha-1 div, .main--header--flecha-2 div {
     font-size: 1.6rem;
     font-family: 'Poppins-Regular', 'Poppins', sans-serif;
     color: var(--texto-opc3);
     text-align: left;
     line-height: normal;
-  
     position: absolute;
 }
 
@@ -265,7 +272,7 @@ figure {
   margin-left: 40px;
 }
 
-
+/* Fin flechas */
 .img-container {
   position: absolute;
   align-self: center;
@@ -307,6 +314,7 @@ figure {
   border-radius: 4px;
 }
 
+
 /*MODALES*/
 .modal--container{  
   position: absolute;
@@ -315,7 +323,7 @@ figure {
   align-self: center;
   justify-content: center;
   width: 1024px;
-  height: 680px;
+  height: 720px;
   bottom: 1400px;
   background-color: rgba(107, 107, 107, 0.8);
   transition: all 1s;
@@ -420,6 +428,8 @@ figure {
   border-radius: 4px;
 }
 
+
+/* PIE */
 footer {
   position: relative;
   display: flex;
